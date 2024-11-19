@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="stylesheet" href="./css/flexbox.css">
+    
+    
+    <title>AluraGeek</title>
+</head>
+<body>
+    <header>
+        <nav class="encabezado">
+            <a class="logo" href="./index.html"><img src="./img/logo.png" alt="computador" class="img-logo"></a>
+
+        </nav>
+    </header>
+    <main class="caja_main">
+    
+    <section class="formulario">
+        <h1>AGREGAR PRODUCTO</h1>
+        <form class="container_formulario" data-formulario>
+            <div  class="formulario__campo">
+                <label class="campo__etiqueta" for="nombre">Nombre del Producto</label>
+                <input name="nombre " class="campo__escrita" required placeholder="nombre ..." id="nombre"
+                    data-name />
+            </div>
+            <div  class="formulario__campo">
+                <label class="campo__etiqueta" for="precio">Precio del producto</label>
+                <input name="Precio" class="campo__escrita" required placeholder="precio..." id="precio" data-price />
+            </div>
+            <div  class="formulario__campo">
+                <label class="campo__etiqueta" for="imagen">Imagen del producto</label>
+                <input name="imagen" class="campo__escrita" required placeholder="imagen.." id="imagen" data-image/>
+            </div>
+            <input class="formulario__boton" type="submit" />
+    
+        </form>
+
+    </section>
+        
+        <section class="productos">
+            <h1> MIS PRODUCTOS</h1>
+            <ul class="productos__conteiner" alt="productos tecnologicos" data-lista>
+                <!-- <li class= "producto_item">
+                    <div class="card">
+                        <img  class="card_img" src="./img/producto1.png" alt="producto">
+                        <h3 class="card-title">Nombre del producto </h3>
+                        <p class="card-price">$100</p>
+                        <button class="delete-button">
+                            <img class="icono" src="./img/iconoeliminar.png" alt="icono">
+                        </button>
+                      </div>
+                </li>
+                <li class= "producto_item">
+                    <div class="card">
+                        <img class="card_img" src="./img/producto2.png" alt="producto">
+                        <h3 class="card-title">Nombre del producto </h3>
+                        <p class="card-price">$100</p>
+                        <button class="delete-button">
+                            <img class="icono" src="./img/iconoeliminar.png" alt="icono">
+                        </button>
+                      </div>
+                </li>
+                <li class= "producto_item">
+                    <div class="card">
+                        <img class="card_img" src="./img/producto1.png" alt="producto">
+                        <h3 class="card-title">Nombre del producto </h3>
+                        <p class="card-price">$100</p>
+                        <button class="delete-button">
+                            <img class="icono" src="./img/iconoeliminar.png" alt="icono">
+                        </button>
+                      </div>
+                </li>
+                <li class= "producto_item">
+                    <div class="card">
+                        <img class="card_img" src="./img/producto2.png" alt="producto">
+                        <h3 class="card-title">Nombre del producto </h3>
+                        <p class="card-price">$100</p>
+                        <button class="delete-button">
+                            <img class="icono" src="./img/iconoeliminar.png" alt="icono">
+                        </button>
+                      </div>
+                </li> -->
+            </ul>
+
+        </section>
+
+      
+    </main>
+    
+
+    <footer class="container-footer">
+        <a class="logo_footer" href="./index.html"><img src="./img/logo.png" alt="computador" class="img-logo"></a>
+        <div class="campo_footer"> 
+        <p>Desarrollado por : Astrid Macana </p>
+        <p>Programa  ONE, una alianza entre Alura Latam y Oracle/2024</p>
+        </div>
+        
+    </footer>
+    <script type="module" src="./js/controller/main.js"></script>
+</body>
+
+</html>

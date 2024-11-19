@@ -1,0 +1,90 @@
+h1{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+} 
+.formulario{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin-top: 20px;
+}
+.container_formulario{
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: initial;
+} 
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.productos__conteiner{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    padding: 30px 20px 40px 10px;
+    
+}
+
+.card {
+    flex-basis: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.card h3,
+.card p {
+    margin: 0.5em 0;
+}
+
+@media (min-width: 1024px) {
+    .encabezado{
+        height: 30%;
+    }
+    .img-logo{
+        width: 20%;
+    }
+    .caja_main{
+        height: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .formulario h1{
+        font-size: 1.6rem;
+    }
+    .container_formulario{
+        display: flex;
+        flex-direction: column;
+    }
+    .campo__escrita{
+        width: 35vw;
+        font-size: 1rem;
+    }
+    .campo__etiqueta {
+        font-size: 1.1rem;
+    }
+    .productos{
+        margin-top: 30px;
+        
+    }
+    .productos h1 {
+        font-size: 1.6rem;
+    }
+    .card {
+        flex-basis: calc(25% - 20px);
+    }
+    .card h3,
+.card p {
+    margin: 0.8em 0;
+}
+}
+
